@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | EmpowerMe</title>
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "HNCHh4uYzCJi7na1q",
+      });
+   })();
+</script>
+</head>
+<body>
+
+    <nav>
+        <div id="back">
+            <h2><i class="ri-arrow-left-wide-fill"></i>Back</h2>
+          </div>
+        <ul>
+        </ul>
+    </nav>
+    <div id="pic"></div>
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        <p>Have a question? Reach out to us!</p>
+
+        <form id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <input type="text" id="subject" name="subject" placeholder="Subject of Enquiry" required>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <p id="status-message"></p>
+    </div>
+    
+    <script src="contact.js"></script>
+</body>
+</html>

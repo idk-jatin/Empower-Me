@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page - EmpowerMe</title>
+    <link rel="stylesheet" href="profile.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+<div id="main">
+  <div id="back">
+    
+    <h2><i class="ri-arrow-left-wide-fill"></i>Back</h2>
+  </div>
+   
+  <div class="profile-container">
+ 
+    <div class="profile-header">
+      <div id="profile-with-usname">
+        <div class="profile-pic-container">
+          <img id="profile-pic" src="avatar-3814049_640.png" alt="Profile Picture">
+      </div>
+      <p id="full-name">Full Name</p>
+        <span class="tag">Learner</span>
+      </div>
+      <h2 id="username">Vamma</h2>
+    </div>
+
+    <div class="profile-details">
+      <h2>About</h2>
+        <p><strong>Email:</strong> <span id="email">user@example.com</span></p>
+        <hr>
+        <p><strong>Skills:</strong> <span id="skills-list"></span></p>
+        <p><strong>Job Aim:</strong> <span id="job-aim-display"></span></p>
+        <p><strong>CV:</strong> <a id="cv-link" href="#" download><span id="cvdwnld">Download CV</span></a></p>
+    </div>
+    <button id="edit-profile-btn">Edit Profile</button>
+</div>
+
+
+<div class="modal" id="edit-modal">
+    <div class="modal-content">
+        <h2>Edit Profile</h2>
+        <form id="edit-profile-form">
+            <label for="new-name">Full Name:</label>
+            <input type="text" id="new-name" required>
+
+            <label for="new-email">Email:</label>
+            <input type="email" id="new-email" required>
+
+            <label for="new-job-aim">Job Aim:</label>
+            <input type="text" id="new-job-aim" required>
+
+            <label for="new-skills">Skills:</label>
+            <input type="text" id="skill-input" placeholder="Type a skill...">
+            <div id="skills-container"></div>
+
+            <label for="new-profile-pic">Profile Picture:</label>
+            <input type="file" id="new-profile-pic" accept="image/*">
+
+            <label for="new-cv">Upload CV:</label>
+            <input type="file" id="new-cv" accept=".pdf,.docx">
+
+            <button type="submit">Save Changes</button>
+            <button type="button" id="close-modal">Cancel</button>
+        </form>
+    </div>
+</div>
+
+<h5>©️EmpowerMe. Live for Learning</h5>
+
+</div>
+   
+
+    <script type="module" src="profile.js"></script>
+</body>
+</html>

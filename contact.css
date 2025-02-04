@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: white;
+    /* text-align: center; */
+    position: relative;
+   
+}
+
+nav {
+    /* background: #007BFF; */
+    color: white;
+    padding: 15px;
+    display: flex;
+    height: 7vh;
+    align-items: center;
+}
+#back h2{
+    font-family: monument;
+    font-weight: 500;
+    cursor: pointer;
+    color: black;
+}
+#pic{
+    width: 40vw;
+    height: 40vw;
+    margin-left: 15vw;
+    margin-top: -5vh;
+    /* background-color: red; */
+    background-image: url("contekt.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+.contact-container {
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    margin-right: 5vw;
+    top: 30vh;
+    left: 45%;
+  width: fit-content;
+    background-color: rgba(102, 51, 153, 0.312);
+
+}
+.contact-container h1{
+font-family: monument;
+color: rgba(255, 166, 0, 0);
+-webkit-text-stroke-color: black;
+-webkit-text-stroke-width: 0.5px;
+font-weight: 400;
+text-transform: uppercase;
+letter-spacing: 2px;
+font-size: 1.8em;
+}
+
+.contact-container p{
+    font-family: monument;
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+    font-size: 0.7em;
+    }
+
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+button {
+    background: lightcoral;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all linear 0.4s;
+}
+
+button:hover {
+    background: lightseagreen;
+}
+
+@media (max-width: 600px) {
+
+    .contact-container {   
+        top: 40vh;
+        left: 5%;
+margin-right: 10vw;
+margin-bottom: 5vw;
+margin-left: 5vw;
+    }
+
+    #pic{
+        background: none;
+    }
+    body{
+        background: url("contekt.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+    .contact-container h1{
+        font-size: 1.4em;
+        color: rgb(0, 0, 0);
+    }
+        .contact-container p{
+           font-size: 0.6em;
+            }
+
+}

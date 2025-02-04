@@ -1,0 +1,311 @@
+
+:root{
+  --accent-color: #8672ff;
+  --base-color: white;
+  --text-color:#2e2b41;
+  --input-color:#f3f0ff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow";
+}
+html,body {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+#main {
+  background-color: #f4f4f4;
+  height: 100vh;
+  width: 100vw;
+  padding: 2vw;
+  margin: 0;
+  position: relative;
+}
+#back{
+  margin-bottom: 1vh;
+}
+#back h2{
+  font-weight: 300;
+  font-size: 20px;
+  font-family: monument;
+  cursor: pointer;
+}
+#main h5{
+  font-weight: 400;
+  color: #555;
+  justify-self: center;
+  margin-top: 8vh;
+  text-align: center;
+  
+}
+.profile-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+
+
+#profile-with-usname{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+/* gap: 2vw; */
+}
+.profile-header{
+  /* background-color: red; */
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 10px;
+  margin-bottom: 4vh;
+  gap: 2.5vh;
+}
+.profile-header h2{
+  margin-top: -6.85vh;
+  font-weight: 400;
+}
+
+
+.profile-pic-container {
+  width: 10vh;
+  height: 10vh;
+  border-radius: 50%;
+  overflow: hidden;
+  margin:  0 0 2vh 0px;
+}
+
+.profile-pic-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-details{
+  background-color: white;
+  border-radius: 15px;
+  width: 100%;
+  padding: 2vh;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.profile-details p {
+  color: #555;
+}
+.profile-header .tag{
+  background-color: rgba(173, 216, 230, 0.492);
+  border-radius: 5px;
+  padding:  0px 2px;
+  font-size: 12px;
+  margin-top: 3px;
+}
+#cvdwnld{
+  width: 80px;
+  height: 40px;
+  padding: 4px;
+  font-size: 12px;
+  border-radius: 4px;
+  color: white;
+  background-color: #28a745;
+}
+.profile-details a{
+  text-decoration: none;
+}
+.profile-details h2{
+  font-size: 30px;
+  font-weight: 400;
+  font-family: monument;
+  letter-spacing: 2px;
+}
+.profile-details strong{
+  font-size: 20px;
+  
+}
+#cvdwnld:hover {
+  background: #218838;
+}
+#edit-profile-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.7vh;
+  margin-top: 15px;
+  width: 10vh;
+  height: 3.4vh;
+}
+
+#edit-profile-btn:hover {
+  background: #218838;
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+}
+
+.modal-content button {
+  background: #007bff;
+  color: white;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.modal-content button#close-modal {
+  background: #dc3545;
+}
+
+
+
+
+
+#skills-container {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 10px; 
+  margin-top: 10px;
+}
+
+
+.skill-tag {
+  background-color: #007bff; 
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+}
+
+
+.remove-skill {
+  margin-left: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+
+#skills-list {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 8px;
+  margin-top: 10px;
+}
+#skills-list {
+  display: flex;
+
+  margin-top: 10px;
+  gap: 5px;
+}
+
+.skill-display-tag {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 14px;
+  display: inline-block;
+}
+
+
+.skill-display-tag {
+  background-color: #28a745; 
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 5px;
+}
+.suggestions-container {
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  max-height: 150px;
+  overflow-y: auto;
+  width: 100%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 1000;
+}
+
+.suggestion {
+  padding: 8px;
+  cursor: pointer;
+  background: #f4f4f4;
+  border-bottom: 1px solid #ddd;
+}
+
+.suggestion:hover {
+  background: #e0e0e0;
+}
+
+.skill-tag {
+  display: inline-block;
+  background: #007bff;
+  color: white;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.remove-skill {
+  margin-left: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.skill-display-tag {
+  display: inline-block;
+  background: #007bff;
+  color: white;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
